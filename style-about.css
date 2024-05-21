@@ -1,0 +1,123 @@
+*{
+   font-family: 'Anonymous Pro', monospace;
+   text-decoration: none;
+}
+body {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   background-color: black;
+   color: hsl(120, 100%, 50%);
+}
+header {
+   background-color: hsl(0, 0%, 0%);
+   height: 10%;
+   display: inline-flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 30px;
+   font-size: 15px;
+   font-weight: bold;
+   border-bottom: 4px solid hsl(120, 100%, 50%);
+}
+header a{
+   color: hsl(120, 100%, 50%);
+}
+header a:hover{
+   border-bottom: 2px solid hsl(120, 100%, 50%);
+   color: hsl(120, 100%, 50%);
+}
+.rowMain{
+   display: flex;
+   flex-grow: 1;
+   flex-wrap: nowrap;
+}
+main{
+   background-color: black;
+   padding: 0 50px;
+   flex: 4;
+   display: flex;
+   font-size: large;
+   align-items: center;
+   justify-content: space-between;
+}
+#img{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+main img{
+   border: 2px solid;
+   height: 300px;
+   width: auto;
+   display: none;
+}
+#biodata{
+   padding: 30px 90px;
+}
+main button{
+   margin: 30px auto;
+   background-color: hsl(120, 100%, 50%);
+   
+   font-weight: bold;
+   border: none;
+   border-radius: 5px;
+}
+main button:hover{
+   background-color: hsl(0, 0%, 0%);
+   color: hsl(120, 100%, 50%);
+   border: 1px solid hsl(120, 100%, 50%);
+}
+#moreInfo{
+   visibility: visible;
+}
+aside{
+   flex: 1;
+   background-color: hsl(120, 100%, 50%);
+   color: black;
+   border: 1px solid;
+   font-weight: bolder;
+   line-height: 150%;
+   padding: 40px 0;
+}
+aside p {
+   text-align: justify;
+   font-size: 15px;
+   margin: 10px 20px;
+}
+aside a{
+   padding: 0px  32px;
+   text-decoration: none;
+   font-size: 40px;
+   color: black;
+   display: block;
+   transition: 0.3s;
+}
+#samping{
+   visibility: hidden;
+}
+footer{
+   background-color: hsl(0, 0%, 10%);
+   height: 10%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 30px 10px;
+}
+#alamat h5{
+   text-align: center;
+   margin: 10px;
+}
+#alamat p{
+   text-align: justify;
+   font-size: 12px;
+}
+#kontak{
+   text-align: center;
+}
+#kontak ion-icon {
+   color: hsl(120, 100%, 50%);
+   font-size: 25px;
+}
