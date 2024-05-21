@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- style -->
+   <link rel="stylesheet" href="style-about.css">
+
+   <!-- font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+   
+   <!-- interactive -->
+   <!-- <script src="myJs.js"></script> -->
+
+   <!-- ionicons -->
+   <script  src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+ 
+   <title>Portfolio - About</title>
+</head>
+
+<body>
+   <script>
+      alert("Halaman ini penuh dengan data kredensial sehingga dienkripsi. Klik bagian yang ingin dilihat untuk mendekripsi!");
+   </script>
+
+   <header>
+      <H2>MY PROFILE</H2>
+      <nav>
+        <a href="#" onclick="redirectToIndex()">Home</a>
+        <a href="#" onclick="redirectToAbout()">About</a>
+        <a href="#" onclick="">Project</a> <!--Belum ada halaman untuk  Project-->
+      </nav>
+   </header>
+   
+   <div class="rowMain">
+      <main>
+         <div id="img">
+            <img id="pic" src="img/maman-pic.png" alt="gbr">
+            <button id="pic" onclick="toggle()">Show<br>Picture</button> 
+         </div>
+         <div id ="biodata">
+            <h2 id="nama" onclick="gantinama()">AUTHOR's NAME</h2>
+            <h2 id="nickname" onclick="gantinickname()">Known As '???'</h2>
+            <h2 id="nim" onclick="gantinim()">2300018***</h2>
+            <h2 id="ttl" onclick="gantittl()">DD MM YY</h2>
+            <h2 id="city" onclick="ganticity()">CITY</h2>
+         </div>
+         <div id="moreInfo">
+            <button id="moreInfoBtn" onclick="showAside()">Click for More Info>></button>
+         </div>
+      </main>
+      <aside id="samping">
+         <a href="#" class="closebtn" onclick="closeNav()">×</a>
+         <ul>
+            <h3>More Info:</h3>
+            <li>Sex: Male</li>
+            <li>
+               Hobby:
+               <ul>
+                  <li>Reading</li>
+                  <li>Hiking</li>
+                  <li>Coding</li>
+               </ul>
+            </li>
+            <li>Interest:  
+               <ul>
+                  <li>CyberSec</li>
+                  <li>GameDev</li>
+                  <li>MobileDev</li>
+               </ul>
+            </li>
+            <li>
+               Nationality: <br>
+               INDONESIA, ID
+            </li>
+         </ul>
+         <p>"A well-educated mind will always more questions than answers." - Hellen Keller </p>
+      </aside>
+   </div>
+   <footer>
+      <div id="alamat" style="flex-basis: 300px;">
+         <h5>Address:</h5>
+         <p id="address" onclick="gantiaddress()">### ### ###</p>
+      </div>
+      <div id="kontak">
+         <p>Contact:</p>
+         <a href="https://wa.me/6282220359665" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+         <a href="https://www.instagram.com/elfath.een_/#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+         <a href="mailto:2300018314@webmail.uad.ac.id" target="_blank"><ion-icon name="mail"></ion-icon></a>
+         <a href="https://github.com/KirishimaHikaru" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+      </div>
+   </footer>
+</body>
+</html>
